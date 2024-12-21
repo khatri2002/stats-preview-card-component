@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // Primary
+              "very-dark-blue": "hsl(233, 47%, 7%)",
+              "dark-desaturated-blue": "hsl(244, 38%, 16%)",
+              "soft-violet": "hsl(277, 64%, 61%)",
+              "soft-violet-custom": "hsl(277deg 99.66% 38.7%)",
+
+              // Neutral
+              white: "hsl(0, 0%, 100%)",
+              "slightly-transparent-white-1": "hsla(0, 0%, 100%, 0.75)",
+              "slightly-transparent-white-2": "hsla(0, 0%, 100%, 0.6)",
+            },
+            fontFamily: {
+              inter: ["Inter", "serif"],
+              "lexend-deca": ["Lexend Deca", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <main
+      class="min-h-screen bg-very-dark-blue flex justify-center items-center"
+    >
+      <div
+        class="bg-dark-desaturated-blue flex items-center w-[90%] xl:w-[75%] rounded-xl flex-col-reverse md:flex-row gap-y-4 my-12"
+      >
+        <div
+          class="w-full md:w-1/2 px-6 md:px-8 lg:px-12 xl:px-20 py-4 lg:py-8"
+        >
+          <h1
+            class="text-white text-2xl lg:text-4xl font-bold font-inter text-center md:text-start"
+          >
+            Get <span class="text-soft-violet">insights</span> that help your
+            business grow.
+          </h1>
+          <h2
+            class="text-slightly-transparent-white-1 mt-6 leading-5 lg:leading-6 text-sm lg:text-base text-center md:text-start"
+          >
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </h2>
+          <div
+            class="flex items-center mt-8 lg:mt-16 justify-between flex-col md:flex-row gap-y-6"
+          >
+            <div class="flex flex-col gap-y-1">
+              <span
+                class="text-white text-xl lg:text-2xl font-bold text-center md:text-start"
+                >10k+</span
+              >
+              <span
+                class="uppercase text-slightly-transparent-white-2 text-xs lg:text-sm tracking-wider text-center md:text-start"
+                >companies</span
+              >
+            </div>
+            <div class="flex flex-col gap-y-1">
+              <span
+                class="text-white text-xl lg:text-2xl font-bold text-center md:text-start"
+                >314</span
+              >
+              <span
+                class="uppercase text-slightly-transparent-white-2 text-xs lg:text-sm tracking-wider text-center md:text-start"
+                >templates</span
+              >
+            </div>
+            <div class="flex flex-col gap-y-1">
+              <span
+                class="text-white text-xl lg:text-2xl font-bold text-center md:text-start"
+                >12M+</span
+              >
+              <span
+                class="uppercase text-slightly-transparent-white-2 text-xs lg:text-sm tracking-wider text-center md:text-start"
+                >queries</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 relative">
+          <div
+            class="bg-soft-violet-custom opacity-50 w-full h-full absolute top-0 rounded-r-xl"
+          ></div>
+          <img
+            class="w-full rounded-r-xl hidden md:block"
+            src="./assets/images/image-header-desktop.jpg"
+            alt="image-header"
+          />
+          <img
+            class="block md:hidden rounded-t-xl w-full"
+            src="./assets/images/image-header-mobile.jpg"
+            alt="image-header"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
